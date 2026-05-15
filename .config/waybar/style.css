@@ -1,0 +1,79 @@
+@import "colors/mutagen.css";
+
+* {
+	border: none;
+	border-radius: 0;
+	font-family: Inter, "JetBrainsMono Nerd Font Propo", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 1.1rem;
+	min-height: 15px;
+	border-radius: 50px;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+tooltip {
+	background: rgba(43, 48, 59, 0.5);
+	border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+	color: white;
+}
+
+.modules-left {
+	margin-left: 15px;
+}
+
+.modules-right {
+	margin-right: 15px;
+}
+
+#custom-launcher,
+#clock,
+#workspaces,
+#custom-notifications,
+#custom-media,
+#custom-pacman,
+#custom-weather,
+#pulseaudio,
+#battery,
+#network,
+#power-profiles-daemon {
+	background: #121212;
+	margin-right: 10px;
+	padding: 0px 10px;
+}
+
+#power-profiles-daemon {
+	margin: 0
+}
+
+#workspaces button {
+	background-color: @surface_container;
+	color: @on_surface_variant;
+	padding: 0 8px;
+	margin: 3px 2px;
+	min-width: 28px;
+	border-radius: 50px;
+	transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+	background-color: @surface_container_high;
+	color: @on_surface;
+}
+
+#workspaces button.active {
+	background-color: @primary_container;
+	color: @on_primary_container;
+	padding: 0 14px;
+	font-weight: 700;
+}
+
+#workspaces button.urgent {
+	background-color: @error_container;
+	color: @on_error_container;
+}

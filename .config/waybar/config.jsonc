@@ -1,6 +1,8 @@
 {
   "layer": "top",
 
+  "margin-top": 13,
+
   "modules-left": ["custom/launcher", "clock", "hyprland/workspaces"],
   "modules-center": ["custom/notifications", "custom/media"],
   "modules-right": [
@@ -31,7 +33,7 @@
 
   "custom/notifications": {
     "tooltip": true,
-    "format": "<span size='16pt'>{icon} </span>",
+    "format": "<span size='16pt'>{icon}</span>",
     "format-icons": {
       "notification": "󱅫",
       "none": "󰂜",
@@ -64,7 +66,7 @@
   },
 
   "custom/pacman": {
-    "format": "{}  ",
+    "format": "{} 󰇚",
     "interval": 3600,
     "exec": "checkupdates | wc -l",
     "exec-if": "exit 0",

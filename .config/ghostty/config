@@ -49,6 +49,7 @@ macos-titlebar-style = hidden
 macos-non-native-fullscreen = false
 
 # custom-shader = ./shaders/bloom.glsl
+# custom-shader = ./shaders/cursor_trail.glsl
 
 macos-icon = xray
 macos-option-as-alt = true
