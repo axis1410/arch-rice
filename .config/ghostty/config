@@ -1,0 +1,107 @@
+# font-family = MonaspiceNe Nerd Font Mono
+# font-style-bold = MonaspiceNe Nerd Font Mono Bold
+# font-style-italic = MonaspiceNe Nerd Font Mono Italic
+# font-style-bold-italic = MonaspiceNe Nerd Font Mono Bold Italic
+
+# font-family = MonoLisa Nerd Font Mono
+# # Only to be used with MonoLisa
+adjust-cell-height = -2
+adjust-cell-width = 0
+
+# font-family = 0xProto Nerd Font Mono
+# font-family = CommitMono Nerd Font Mono
+
+
+font-family = JetBrainsMono Nerd Font Mono
+
+
+font-size = 12
+# font-size = 18
+font-synthetic-style = true
+font-thicken = true
+font-thicken-strength = 200
+
+alpha-blending = native
+
+# theme = "Catppuccin Frappe"
+# theme = "Catppuccin Mocha"
+# theme = "Cutie Pro"
+# theme = "Adwaita Dark"
+# theme = "Dracula+"
+# theme = "JetBrains Darcula"
+# theme = "Catppuccin Macchiato"
+# theme = "Nord"
+# theme = "GitHub Dark"
+theme = "Tomorrow Night"
+
+cursor-style = "block"
+cursor-style-blink = true
+
+clipboard-trim-trailing-spaces = true
+
+mouse-hide-while-typing = true
+
+window-colorspace = display-p3
+window-decoration = auto
+
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = hidden
+macos-non-native-fullscreen = false
+
+# custom-shader = ./shaders/bloom.glsl
+
+macos-icon = xray
+macos-option-as-alt = true
+maximize = true
+
+window-inherit-font-size = true
+
+background-blur = 95
+background-opacity = 0.95
+background-opacity-cells = true
+
+window-padding-balance = true
+
+
+# Ghostty - Cursor Dark
+# palette = 0=#505050
+# palette = 1=#BF616A
+# palette = 2=#A3BE8C
+# palette = 3=#EFB080
+# palette = 4=#85C1FC
+# palette = 5=#AA9BF5
+# palette = 6=#88C0D0
+# palette = 7=#D8DEE9
+# palette = 8=#505050
+# palette = 9=#BF616A
+# palette = 10=#A3BE8C
+# palette = 11=#EBC88D
+# palette = 12=#85C1FC
+# palette = 13=#C582BF
+# palette = 14=#83D6C5
+# palette = 15=#D8DEE9
+# background = #1A1A1A
+# foreground = #D8DEE9
+# cursor-color = #AA9BF5
+# cursor-text = #1A1A1A
+# selection-background = #D8DEE9
+# selection-foreground = #1A1A1A
+
+
+shell-integration = zsh
+term = xterm-ghostty
+scrollback-limit = 10000
+# keybind = ctrl+n=new_window
+# keybind = ctrl+h=goto_split:left
+# keybind = ctrl+j=goto_split:bottom
+# keybind = ctrl+k=goto_split:top
+# keybind = ctrl+l=goto_split:right
+# keybind = ctrl+a>h=new_split:left
+# keybind = ctrl+a>j=new_split:down
+# keybind = ctrl+a>k=new_split:up
+# keybind = ctrl+a>l=new_split:right
+# keybind = ctrl+a>f=toggle_split_zoom
+# keybind = ctrl+a>n=next_tab
+# keybind = ctrl+a>p=previous_tab
+# keybind = super+r=reload_config
+window-save-state = always

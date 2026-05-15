@@ -1,0 +1,173 @@
+return {
+  -- { "0xleodevv/oc-2.nvim", lazy = false, enabled = false },
+  --
+  -- {
+  --   "catppuccin/nvim",
+  --   enabled = false,
+  --   name = "catppuccin",
+  --   lazy = true,
+  --   opts = {
+  --     term_colors = true,
+  --     no_italic = true,
+  --     lsp_styles = {
+  --       underlines = {
+  --         errors = { "undercurl" },
+  --         hints = { "undercurl" },
+  --         warnings = { "undercurl" },
+  --         information = { "undercurl" },
+  --         ok = { "undercurl" },
+  --       },
+  --     },
+  --     auto_integrations = true,
+  --   },
+  -- },
+  --
+  -- -- { "rose-pine/neovim", lazy = false },
+  --
+  -- {
+  --   "rose-pine/neovim",
+  --   name = "rose-pine",
+  --   enabled = false,
+  --   priority = 1000,
+  --   opts = {
+  --     styles = { italic = false },
+  --     dim_inactive_windows = true,
+  --     palette = {
+  --       dawn = {
+  --         -- no_bg = "#faf4ed",
+  --         cursor_bg = "#998f97",
+  --         cursor_fg = "#575279",
+  --       },
+  --       main = {
+  --         -- no_bg = "#141415",
+  --         cursor_bg = "#ffffff",
+  --         cursor_fg = "#000000",
+  --         -- gold = "#f6d5a7",
+  --         -- foam = "#a1d1da",
+  --         -- iris = "#d9c7ef",
+  --         -- rose = "#ebbcba",
+  --         -- pine = "#437e91",
+  --       },
+  --     },
+  --     highlight_groups = {
+  --       Cursor = { bg = "cursor_bg", fg = "cursor_fg" },
+  --       Directory = { fg = "pine", bold = false },
+  --     },
+  --
+  --     before_highlight = function(group, highlight, palette)
+  --       if group:match "^DiagnosticVirtualText" and highlight.bg == nil then
+  --         highlight.bg = highlight.fg
+  --         highlight.blend = 10
+  --       end
+  --     end,
+  --   },
+  -- },
+  --
+  -- { "sainnhe/sonokai", lazy = false, enabled = false },
+  --
+  -- { "folke/tokyonight.nvim", lazy = false, enabled = false },
+  --
+  -- { "rebelot/kanagawa.nvim", lazy = false, enabled = false },
+  --
+  -- { "nickkadutskyi/jb.nvim", lazy = false, enabled = false },
+  --
+  -- { "deparr/tairiki.nvim", lazy = false, priority = 1000, enabled = false },
+  --
+  -- { "pmouraguedes/neodarcula.nvim", lazy = false, priority = 1000, enabled = false },
+  --
+  -- { "frenzyexists/aquarium-vim", lazy = false, priority = 1000, enabled = false },
+  --
+  -- {
+  --   "vague-theme/vague.nvim",
+  --   lazy = false,
+  --   enabled = false,
+  --   config = function()
+  --     local v = require "vague"
+  --     v.setup {
+  --       transparent = false,
+  --       bold = false,
+  --       italic = false,
+  --     }
+  --   end,
+  -- },
+  --
+  -- {
+  --   "projekt0n/github-nvim-theme",
+  --   name = "github-theme",
+  --   enabled = false,
+  --   config = function()
+  --     require("github-theme").setup {
+  --       styles = {
+  --         comments = "italic",
+  --         keywords = "bold",
+  --         types = "italic,bold",
+  --       },
+  --     }
+  --   end,
+  -- },
+  --
+  -- {
+  --   "axis1410/cursor-dark.nvim",
+  --   lazy = false,
+  --   enabled = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require("cursor-dark").setup {
+  --       style = "dark-midnight",
+  --       transparent = false,
+  --       dashboard = true,
+  --     }
+  --   end,
+  -- },
+  --
+  -- {
+  --
+  --   "Mofiqul/adwaita.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --
+  --   config = function()
+  --     vim.g.adwaita_darker = false
+  --   end,
+  -- },
+  --
+  -- {
+  --   "sainnhe/gruvbox-material",
+  --   lazy = false,
+  --   enabled = false,
+  --   priority = 1000,
+  --   config = function()
+  --     vim.g.gruvbox_material_enable_italic = 1
+  --     -- hard, medium or soft
+  --     vim.g.gruvbox_material_background = "medium"
+  --     vim.g.gruvbox_material_enable_bold = 1
+  --     -- '', 'auto', 'red', 'orange', 'yellow', 'green', 'aqua', 'blue', 'purple'
+  --     vim.g.gruvbox_material_cursor = "auto"
+  --     vim.g.gruvbox_material_transparent_background = 0
+  --     vim.g.gruvbox_material_dim_inactive_windows = 1
+  --     vim.g.gruvbox_material_visual = "blue background"
+  --     vim.g.gruvbox_material_ui_contrast = "high"
+  --     vim.g.gruvbox_material_diagnostic_text_highlight = 1
+  --     vim.g.gruvbox_material_diagnostic_line_highlight = 0
+  --     vim.g.gruvbox_material_diagnostic_virtual_text = "highlighted"
+  --   end,
+  -- },
+  --
+  -- {
+  --   "sainnhe/edge",
+  --   lazy = false,
+  --   enabled = false,
+  --   priority = 1000,
+  --   config = function()
+  --     local g = vim.g
+  --     g.edge_style = "aura"
+  --     g.edge_disable_italic_comment = 0
+  --     g.edge_enable_italic = 1
+  --     g.edge_cursor = "auto"
+  --     g.edge_diagnostic_text_highlight = 1
+  --     g.edge_diagnostic_line_highlight = 0
+  --     g.edge_diagnostic_virtual_text = "highlighted"
+  --     g.edge_current_word = "underline"
+  --   end,
+  -- },
+}
