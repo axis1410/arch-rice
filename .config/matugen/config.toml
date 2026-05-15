@@ -28,4 +28,4 @@ post_hook = 'tmux source-file ~/.config/tmux/matugen-colors.conf 2>/dev/null || 
 
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
-output_path = '~/.config/hypr/colors.conf'
+output_path = '~/dotfiles/.config/hypr/modules/colors.conf'
