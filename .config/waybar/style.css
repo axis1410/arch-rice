@@ -1,4 +1,4 @@
-@import "colors/mutagen.css";
+@import "colors/matugen.css";
 
 * {
 	border: none;
@@ -42,9 +42,10 @@ tooltip label {
 #battery,
 #network,
 #power-profiles-daemon {
-	background: #121212;
+	background: @surface;
+	color: @primary;
 	margin-right: 10px;
-	padding: 0px 10px;
+	padding: 5px 10px;
 }
 
 #power-profiles-daemon {
@@ -52,8 +53,8 @@ tooltip label {
 }
 
 #workspaces button {
-	background-color: @surface_container;
-	color: @on_surface_variant;
+	background-color: @surface;
+	color: @primary;
 	padding: 0 8px;
 	margin: 3px 2px;
 	min-width: 28px;
@@ -63,7 +64,7 @@ tooltip label {
 
 #workspaces button:hover {
 	background-color: @surface_container_high;
-	color: @on_surface;
+	color: @primary;
 }
 
 #workspaces button.active {

@@ -1,0 +1,31 @@
+[config]
+
+
+[templates.ghostty]
+input_path = '~/.config/matugen/templates/ghostty'
+output_path = '~/.config/ghostty/themes/Matugen'
+post_hook = 'pkill -SIGUSR2 ghostty'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/dotfiles/.config/waybar/colors/matugen.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+post_hook = '~/.config/matugen/post-hook-scripts/gtk-themes-reload.sh'
+
+[templates.tmux]
+input_path = '~/.config/matugen/templates/tmux-colors.conf'
+output_path = '~/dotfiles/.config/tmux/matugen-colors.conf'
+post_hook = 'tmux source-file ~/.config/tmux/matugen-colors.conf 2>/dev/null || true'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
