@@ -31,5 +31,13 @@ input_path = '~/.config/matugen/templates/hyprland-colors.conf'
 output_path = '~/dotfiles/.config/hypr/modules/colors.conf'
 
 [templates.starship]
-input_path = '~/dotfiles/.config/starship-colors.toml'
+input_path = '~/dotfiles/.config/matugen/templates/starship-colors.toml'
 output_path = '~/dotfiles/.config/starship.toml'
+
+[templates.yazi]
+input_path = '~/dotfiles/.config/matugen/templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.wofi]
+input_path = '~/.config/matugen/templates/wofi.css'
+output_path = '~/dotfiles/.config/wofi/style.css'

@@ -1,0 +1,56 @@
+/*
+* Wofi Colors
+* Generated with Matugen
+*/
+<* for name, value in colors *>
+@define-color {{name}} {{value.default.hex}};
+<* endfor *>
+
+window {
+  background-color: @surface_container_lowest;
+  border: 1px solid @outline_variant;
+  border-radius: 12px;
+}
+
+#input {
+  background-color: @surface_container;
+  color: @on_surface;
+  border: 1px solid @outline_variant;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 8px;
+  box-shadow: none;
+}
+
+#input:focus {
+  border-color: @primary;
+}
+
+#scroll {
+  margin: 0 8px 8px 8px;
+}
+
+#inner-box {
+  background-color: transparent;
+}
+
+#outer-box {
+  background-color: transparent;
+  padding: 4px;
+}
+
+#entry {
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: @on_surface_variant;
+  background-color: transparent;
+}
+
+#entry:selected {
+  background-color: @primary_container;
+  color: @on_primary_container;
+}
+
+#text {
+  color: inherit;
+}
