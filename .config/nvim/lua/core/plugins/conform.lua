@@ -23,6 +23,7 @@ return {
       go = { "golines", "gofumpt", "goimports" },
       rust = { "rust_analyzer" },
       json = { "prettier" },
+      jsonc = { "prettier" },
       yaml = { "prettier" },
       toml = { "taplo" },
       html = { "html_prettier" },

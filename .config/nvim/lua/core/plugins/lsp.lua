@@ -104,6 +104,20 @@ return {
       filetypes = { "markdown" },
     })
 
+    vim.lsp.config("jsonls", {
+      filetypes = { "json", "jsonc" },
+      settings = {
+        json = {
+          validate = { enable = true },
+        },
+      },
+      on_attach = function(client, bufnr)
+        if vim.bo[bufnr].filetype == "jsonc" then
+          vim.diagnostic.enable(false, { bufnr = bufnr })
+        end
+      end,
+    })
+
     vim.lsp.config("hydra_lsp", { filetypes = { "yaml" } })
     vim.lsp.config("bashls", { filetypes = { "sh", "zsh" } })
     vim.lsp.config("html", { filetypes = { "html", "htmldjango", "jinja" } })

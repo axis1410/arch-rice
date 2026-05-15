@@ -2,6 +2,7 @@ local ensure_installed = {
   -- "hydra_lsp",
   "stylua",
   "css-lsp",
+  "json-lsp",
   "html-lsp",
   "ruff",
   "pyright",

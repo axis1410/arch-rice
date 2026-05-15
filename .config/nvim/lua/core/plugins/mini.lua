@@ -20,7 +20,8 @@ return {
     opts = {
       content = {
         filter = function(entry)
-          return not vim.tbl_contains({ ".git", "__pycache__", "node_modules" }, entry.name)
+          return not vim.tbl_contains({ "__pycache__", "node_modules" }, entry.name)
+          -- return not vim.tbl_contains({ ".git", "__pycache__", "node_modules" }, entry.name)
         end,
       },
       mappings = {

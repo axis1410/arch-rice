@@ -9,7 +9,7 @@ M.base46 = {
   --   First value should match the theme above
   theme_toggle = { "tomorrow_night", "one_light" },
   -- transparency: Enable transparent background for some components
-  transparency = true,
+  transparency = false,
   -- integrations: Enable highlight support for these plugins
   --   Available: blink, cmp, conform, diffview, flash, git, gitsigns,
   --              indentline, lazy, mason, navic, noice, notify, nvimtree,
