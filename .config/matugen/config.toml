@@ -13,12 +13,12 @@ post_hook = 'pkill -SIGUSR2 waybar'
 
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
-output_path = '~/.config/gtk-3.0/colors.css'
+output_path = '~/dotfiles/.config/gtk-3.0/colors.css'
 post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme Graphite-Dark; thunar --quit 2>/dev/null || true'
 
 [templates.gtk4]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
-output_path = '~/.config/gtk-4.0/colors.css'
+output_path = '~/dotfiles/.config/gtk-4.0/colors.css'
 post_hook = '~/.config/matugen/post-hook-scripts/gtk-themes-reload.sh; nautilus -q 2>/dev/null || true'
 
 [templates.tmux]
@@ -49,3 +49,7 @@ output_path = '~/dotfiles/.config/opencode/themes/matugen.json'
 [templates.rofi]
 input_path = '~/dotfiles/.config/matugen/templates/rofi.rasi'
 output_path = '~/dotfiles/.config/rofi/launchers/type-7/style-3.rasi'
+
+[templates.wlogout]
+input_path = '~/dotfiles/.config/matugen/templates/colors.css'
+output_path = '~/dotfiles/.config/wlogout/styles/colors.css'
