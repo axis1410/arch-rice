@@ -28,7 +28,7 @@ post_hook = 'tmux source-file ~/.config/tmux/matugen-colors.conf 2>/dev/null || 
 
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
-output_path = '~/dotfiles/.config/hypr/modules/colors.conf'
+output_path = '~/dotfiles/.config/hypr/modules/matugen/colors.conf'
 
 [templates.starship]
 input_path = '~/dotfiles/.config/matugen/templates/starship-colors.toml'
@@ -41,3 +41,7 @@ output_path = '~/.config/yazi/theme.toml'
 [templates.wofi]
 input_path = '~/.config/matugen/templates/wofi.css'
 output_path = '~/dotfiles/.config/wofi/style.css'
+
+[templates.opencode]
+input_path = '~/dotfiles/.config/matugen/templates/opencode-colors.json'
+output_path = '~/dotfiles/.config/opencode/themes/matugen.json'

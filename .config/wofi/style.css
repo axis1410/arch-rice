@@ -105,23 +105,23 @@
 
 
 window {
-  background-color: @surface_container_lowest !important;
+  background-color: @surface_container_lowest;
   border: 1px solid @outline_variant;
   border-radius: 12px;
 }
 
 #input {
-  background-color: @surface_container !important;
-  color: @on_surface !important;
-  border: 1px solid @outline_variant !important;
+  background-color: @surface_container;
+  color: @on_surface;
+  border: 1px solid @outline_variant;
   border-radius: 8px;
   padding: 8px 12px;
   margin: 8px;
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 #input:focus {
-  border-color: @primary !important;
+  border-color: @primary;
 }
 
 #scroll {
@@ -129,26 +129,26 @@ window {
 }
 
 #inner-box {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 #outer-box {
-  background-color: transparent !important;
+  background-color: transparent;
   padding: 4px;
 }
 
 #entry {
   padding: 6px 10px;
   border-radius: 6px;
-  color: @on_surface_variant !important;
-  background-color: transparent !important;
+  color: @on_surface_variant;
+  background-color: transparent;
 }
 
 #entry:selected {
-  background-color: @primary_container !important;
-  color: @on_primary_container !important;
+  background-color: @primary_container;
+  color: @on_primary_container;
 }
 
 #text {
-  color: inherit !important;
+  color: inherit;
 }
