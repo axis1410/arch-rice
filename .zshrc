@@ -317,3 +317,16 @@ export NVM_DIR="$HOME/.config/nvm"
 
 alias lg="lazygit"
 alias sp="sesh picker"
+
+function wallpaper-pick() {
+    local img
+    img=$(find ~/Pictures/wallpapers -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) \
+        | fzf --preview 'kitty icat --clear --transfer-mode=memory --stdin=no --place=${FZF_PREVIEW_COLUMNS}x${FZF_PREVIEW_LINES}@0x0 {} 2>/dev/null || echo {}' \
+              --preview-window=right:60%)
+    [[ -z "$img" ]] && return
+    awww img "$img"
+    matugen image "$img"
+}
+alias wp="wallpaper-pick"
+
+bindkey -s '^[w' 'wallpaper-pick\n'
