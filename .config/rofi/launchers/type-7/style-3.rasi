@@ -23,11 +23,11 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "GeistMono Nerd Font Propo Medium 11";
-    background:                  #1a1110;
-    background-alt:              #534340;
-    foreground:                  #f1dfdb;
-    selected:                    #ffb4a5;
-    active:                      #ffb4a5;
+    background:                  #0f1417;
+    background-alt:              #40484c;
+    foreground:                  #dfe3e7;
+    selected:                    #8ccff0;
+    active:                      #8ccff0;
     urgent:                      #ffb4ab;
 }
 
