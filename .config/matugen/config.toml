@@ -49,8 +49,8 @@ input_path = '~/dotfiles/.config/matugen/templates/opencode-colors.json'
 output_path = '~/dotfiles/.config/opencode/themes/matugen.json'
 
 [templates.rofi]
-input_path = '~/dotfiles/.config/matugen/templates/rofi.rasi'
-output_path = '~/dotfiles/.config/rofi/launchers/type-7/style-3.rasi'
+input_path = '~/dotfiles/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/dotfiles/.config/rofi/launchers/shared/colors.rasi'
 
 [templates.wlogout]
 input_path = '~/dotfiles/.config/matugen/templates/colors.css'

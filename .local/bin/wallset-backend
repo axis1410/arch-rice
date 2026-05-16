@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+	echo "Usage: wallset-backend <path-to-image"
+	exit 1
+fi
+
+IMAGE="$1"
+
+notify-send "Changing theme" "Applying new wallpaper and updating colors. Please wait until confirmation."
+
+matugen image "$IMAGE" --source-color-index 0
+
+notify-send "Theme applied. Wallpaper and theme updated successfully"
