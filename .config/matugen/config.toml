@@ -1,4 +1,6 @@
-[config]
+[config.wallpaper]
+command = "awww img --transition-type center --transition-fps 120 {{ image }}"
+set = true
 
 
 [templates.ghostty]
