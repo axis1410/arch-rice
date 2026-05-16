@@ -9,15 +9,15 @@ command_timeout = 2000
 palette = 'colors'
 
 [palettes.colors]
-color1 = '#8ccff0'
-color2 = '#003546'
-color3 = '#c0c8cd'
-color4 = '#1b2023'
-color5 = '#003546'
-color6 = '#0f1417'
-color7 = '#0f1417'
-color8 = '#8ccff0'
-color9 = '#c7c2ea'
+color1 = '#84d6c3'
+color2 = '#00382f'
+color3 = '#bec9c5'
+color4 = '#1b211f'
+color5 = '#00382f'
+color6 = '#0e1513'
+color7 = '#0e1513'
+color8 = '#84d6c3'
+color9 = '#abcae4'
 color_error = '#ffb4ab'
 
 [character]
