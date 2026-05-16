@@ -7,7 +7,8 @@
   "modules-center": ["custom/notifications", "custom/media"],
   "modules-right": [
     "custom/pacman",
-    "custom/weather",
+    "custom/sysinfo",
+    // "custom/weather",
     "pulseaudio",
     "battery",
     "network",
@@ -72,6 +73,13 @@
     "exec-if": "exit 0",
     "on-click": "ghostty -e bash -c 'sudo pacman -Syu; echo; read -p \"Press enter to close...\"'; pkill -SIGRTMIN+8 waybar",
     "signal": 8,
+  },
+
+  "custom/sysinfo": {
+    "interval": 2,
+    "exec": "~/.config/waybar/scripts/sysinfo.sh",
+    "format": "{}",
+    "tooltip": false,
   },
 
   "custom/weather": {
