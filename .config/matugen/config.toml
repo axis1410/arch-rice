@@ -53,3 +53,8 @@ output_path = '~/dotfiles/.config/rofi/launchers/type-7/style-3.rasi'
 [templates.wlogout]
 input_path = '~/dotfiles/.config/matugen/templates/colors.css'
 output_path = '~/dotfiles/.config/wlogout/styles/colors.css'
+
+[templates.swaync]
+input_path = '~/dotfiles/.config/matugen/templates/colors.css'
+output_path = '~/dotfiles/.config/swaync/colors/matugen.css'
+post_hook = 'swaync-client -R -rs'
