@@ -8,9 +8,9 @@ selection-foreground = #e0def4
 # Normal colors (0-7)
 palette = 0=#1f1d2e
 palette = 1=#eb6f92
-palette = 2=#9ccfd8
-palette = 3=#f6c177
-palette = 4=#f6c177
+palette = 2=#31748f
+palette = 3=#ebbcba
+palette = 4=#31748f
 palette = 5=#c4a7e7
 palette = 6=#9ccfd8
 palette = 7=#908caa
@@ -18,9 +18,9 @@ palette = 7=#908caa
 # Bright colors (8-15)
 palette = 8=#6e6a86
 palette = 9=#eb6f92
-palette = 10=#9ccfd8
-palette = 11=#f6c177
-palette = 12=#f6c177
+palette = 10=#31748f
+palette = 11=#ebbcba
+palette = 12=#31748f
 palette = 13=#c4a7e7
 palette = 14=#9ccfd8
 palette = 15=#e0def4

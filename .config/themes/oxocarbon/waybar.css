@@ -2,50 +2,28 @@
  * CSS Colors — oxocarbon
  */
 
-@define-color background #161616;
-@define-color on_background #dde1e6;
+/* Backgrounds */
+@define-color bg   #161616;
+@define-color bg1  #0f0f0f;
+@define-color bg2  #262626;
+@define-color bg3  #393939;
+@define-color bg4  #525252;
 
-@define-color primary #78a9ff;
-@define-color on_primary #161616;
-@define-color primary_container #393939;
-@define-color on_primary_container #78a9ff;
+/* Foregrounds */
+@define-color fg   #dde1e6;
+@define-color fg2  #a2a9b0;
+@define-color fg3  #697077;
 
-@define-color secondary #08bdba;
-@define-color on_secondary #161616;
-@define-color secondary_container #262626;
-@define-color on_secondary_container #08bdba;
+/* Named colors */
+@define-color red    #ff7eb6;
+@define-color orange #ffb784;
+@define-color yellow #ffe97b;
+@define-color green  #42be65;
+@define-color cyan   #08bdba;
+@define-color blue   #78a9ff;
+@define-color purple #be95ff;
 
-@define-color tertiary #be95ff;
-@define-color on_tertiary #161616;
-@define-color tertiary_container #393939;
-@define-color on_tertiary_container #be95ff;
-
-@define-color error #ff7eb6;
-@define-color on_error #161616;
-@define-color error_container #262626;
-@define-color on_error_container #ff7eb6;
-
-@define-color surface #0f0f0f;
-@define-color on_surface #dde1e6;
-@define-color surface_variant #393939;
-@define-color on_surface_variant #a2a9b0;
-@define-color surface_bright #262626;
-@define-color surface_dim #161616;
-@define-color surface_container #262626;
-@define-color surface_container_low #0f0f0f;
-@define-color surface_container_lowest #0f0f0f;
-@define-color surface_container_high #393939;
-@define-color surface_container_highest #525252;
-
-@define-color outline #697077;
-@define-color outline_variant #393939;
-
-@define-color inverse_surface #dde1e6;
-@define-color inverse_on_surface #161616;
-@define-color inverse_primary #393939;
-
-@define-color source_color #78a9ff;
-
-/* Aliases used by some components */
-@define-color foreground #dde1e6;
-@define-color accent #78a9ff;
+/* Accents */
+@define-color accent  #78a9ff;
+@define-color accent2 #08bdba;
+@define-color accent3 #be95ff;

@@ -2,50 +2,28 @@
  * CSS Colors — nord
  */
 
-@define-color background #2e3440;
-@define-color on_background #eceff4;
+/* Backgrounds */
+@define-color bg   #2e3440;
+@define-color bg1  #242933;
+@define-color bg2  #3b4252;
+@define-color bg3  #434c5e;
+@define-color bg4  #4c566a;
 
-@define-color primary #81a1c1;
-@define-color on_primary #2e3440;
-@define-color primary_container #434c5e;
-@define-color on_primary_container #81a1c1;
+/* Foregrounds */
+@define-color fg   #eceff4;
+@define-color fg2  #d8dee9;
+@define-color fg3  #e5e9f0;
 
-@define-color secondary #88c0d0;
-@define-color on_secondary #2e3440;
-@define-color secondary_container #3b4252;
-@define-color on_secondary_container #88c0d0;
+/* Named colors */
+@define-color red    #bf616a;
+@define-color orange #d08770;
+@define-color yellow #ebcb8b;
+@define-color green  #a3be8c;
+@define-color cyan   #8fbcbb;
+@define-color blue   #81a1c1;
+@define-color purple #b48ead;
 
-@define-color tertiary #b48ead;
-@define-color on_tertiary #2e3440;
-@define-color tertiary_container #434c5e;
-@define-color on_tertiary_container #b48ead;
-
-@define-color error #bf616a;
-@define-color on_error #2e3440;
-@define-color error_container #3b4252;
-@define-color on_error_container #bf616a;
-
-@define-color surface #242933;
-@define-color on_surface #eceff4;
-@define-color surface_variant #434c5e;
-@define-color on_surface_variant #d8dee9;
-@define-color surface_bright #3b4252;
-@define-color surface_dim #2e3440;
-@define-color surface_container #3b4252;
-@define-color surface_container_low #242933;
-@define-color surface_container_lowest #242933;
-@define-color surface_container_high #434c5e;
-@define-color surface_container_highest #4c566a;
-
-@define-color outline #e5e9f0;
-@define-color outline_variant #434c5e;
-
-@define-color inverse_surface #eceff4;
-@define-color inverse_on_surface #2e3440;
-@define-color inverse_primary #434c5e;
-
-@define-color source_color #5e81ac;
-
-/* Aliases used by some components */
-@define-color foreground #eceff4;
-@define-color accent #81a1c1;
+/* Accents */
+@define-color accent  #81a1c1;
+@define-color accent2 #88c0d0;
+@define-color accent3 #b48ead;

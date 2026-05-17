@@ -10,8 +10,8 @@
 window {
 	font-family: "SF Pro Text", "GeistMono Nerd Font Propo";
 	font-size: 1.2em;
-	background-color: alpha(@surface, 0.2);
-	color: @foreground ;
+	background-color: alpha(@bg1, 0.2);
+	color: @fg ;
 
 }
 
@@ -41,6 +41,6 @@ button:hover {
 	outline-style: none;
 	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 4);
 	font-size: 1.3em;
-	color: @foreground;
-	background-color: @on_secondary;
+	color: @fg;
+	background-color: @bg;
 }

@@ -2,50 +2,28 @@
  * CSS Colors — gruvbox-dark-hard
  */
 
-@define-color background #1d2021;
-@define-color on_background #ebdbb2;
+/* Backgrounds */
+@define-color bg   #1d2021;
+@define-color bg1  #1b1b1b;
+@define-color bg2  #282828;
+@define-color bg3  #3c3836;
+@define-color bg4  #504945;
 
-@define-color primary #fabd2f;
-@define-color on_primary #1d2021;
-@define-color primary_container #3c3836;
-@define-color on_primary_container #fabd2f;
+/* Foregrounds */
+@define-color fg   #ebdbb2;
+@define-color fg2  #d5c4a1;
+@define-color fg3  #a89984;
 
-@define-color secondary #b8bb26;
-@define-color on_secondary #1d2021;
-@define-color secondary_container #282828;
-@define-color on_secondary_container #b8bb26;
+/* Named colors */
+@define-color red    #fb4934;
+@define-color orange #fe8019;
+@define-color yellow #fabd2f;
+@define-color green  #b8bb26;
+@define-color cyan   #8ec07c;
+@define-color blue   #83a598;
+@define-color purple #d3869b;
 
-@define-color tertiary #83a598;
-@define-color on_tertiary #1d2021;
-@define-color tertiary_container #3c3836;
-@define-color on_tertiary_container #83a598;
-
-@define-color error #fb4934;
-@define-color on_error #1d2021;
-@define-color error_container #282828;
-@define-color on_error_container #fb4934;
-
-@define-color surface #1b1b1b;
-@define-color on_surface #ebdbb2;
-@define-color surface_variant #3c3836;
-@define-color on_surface_variant #d5c4a1;
-@define-color surface_bright #282828;
-@define-color surface_dim #1d2021;
-@define-color surface_container #282828;
-@define-color surface_container_low #1b1b1b;
-@define-color surface_container_lowest #1b1b1b;
-@define-color surface_container_high #3c3836;
-@define-color surface_container_highest #504945;
-
-@define-color outline #a89984;
-@define-color outline_variant #3c3836;
-
-@define-color inverse_surface #ebdbb2;
-@define-color inverse_on_surface #1d2021;
-@define-color inverse_primary #3c3836;
-
-@define-color source_color #fe8019;
-
-/* Aliases used by some components */
-@define-color foreground #ebdbb2;
-@define-color accent #fabd2f;
+/* Accents */
+@define-color accent  #fabd2f;
+@define-color accent2 #b8bb26;
+@define-color accent3 #83a598;

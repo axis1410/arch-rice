@@ -2,50 +2,28 @@
  * CSS Colors — nightfox
  */
 
-@define-color background #192330;
-@define-color on_background #cdcecf;
+/* Backgrounds */
+@define-color bg   #192330;
+@define-color bg1  #131a24;
+@define-color bg2  #212e3f;
+@define-color bg3  #29394f;
+@define-color bg4  #39506d;
 
-@define-color primary #82aaff;
-@define-color on_primary #192330;
-@define-color primary_container #29394f;
-@define-color on_primary_container #82aaff;
+/* Foregrounds */
+@define-color fg   #cdcecf;
+@define-color fg2  #738091;
+@define-color fg3  #526175;
 
-@define-color secondary #86e1fc;
-@define-color on_secondary #192330;
-@define-color secondary_container #212e3f;
-@define-color on_secondary_container #86e1fc;
+/* Named colors */
+@define-color red    #c94f6d;
+@define-color orange #f4a261;
+@define-color yellow #d9bc8c;
+@define-color green  #81b29a;
+@define-color cyan   #86e1fc;
+@define-color blue   #82aaff;
+@define-color purple #c099ff;
 
-@define-color tertiary #c099ff;
-@define-color on_tertiary #192330;
-@define-color tertiary_container #29394f;
-@define-color on_tertiary_container #c099ff;
-
-@define-color error #c94f6d;
-@define-color on_error #192330;
-@define-color error_container #212e3f;
-@define-color on_error_container #c94f6d;
-
-@define-color surface #131a24;
-@define-color on_surface #cdcecf;
-@define-color surface_variant #29394f;
-@define-color on_surface_variant #738091;
-@define-color surface_bright #212e3f;
-@define-color surface_dim #192330;
-@define-color surface_container #212e3f;
-@define-color surface_container_low #131a24;
-@define-color surface_container_lowest #131a24;
-@define-color surface_container_high #29394f;
-@define-color surface_container_highest #39506d;
-
-@define-color outline #526175;
-@define-color outline_variant #29394f;
-
-@define-color inverse_surface #cdcecf;
-@define-color inverse_on_surface #192330;
-@define-color inverse_primary #29394f;
-
-@define-color source_color #82aaff;
-
-/* Aliases used by some components */
-@define-color foreground #cdcecf;
-@define-color accent #82aaff;
+/* Accents */
+@define-color accent  #82aaff;
+@define-color accent2 #86e1fc;
+@define-color accent3 #c099ff;

@@ -1,7 +1,7 @@
 {
   "layer": "top",
 
-  "margin-top": 13,
+  "margin-top": 0,
 
   "modules-left": ["custom/launcher", "clock", "custom/media"],
   "modules-center": [
@@ -12,7 +12,7 @@
   "modules-right": [
     "custom/pacman",
     "custom/sysinfo",
-    // "custom/weather",
+    "custom/weather",
     "pulseaudio",
     "battery",
     "network",
