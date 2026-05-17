@@ -16,12 +16,13 @@ window#waybar {
 }
 
 tooltip {
-	background: rgba(43, 48, 59, 0.5);
-	border: 1px solid rgba(100, 114, 125, 0.5);
+	background: @surface_container;
+	border: 1px solid @outline_variant;
+	border-radius: 8px;
 }
 
 tooltip label {
-	color: white;
+	color: @on_surface;
 }
 
 .modules-left {

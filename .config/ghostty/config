@@ -34,7 +34,7 @@ maximize = true
 
 window-inherit-font-size = true
 
-background-blur = 95
+background-blur = 100
 background-opacity = 0.9
 background-opacity-cells = true
 

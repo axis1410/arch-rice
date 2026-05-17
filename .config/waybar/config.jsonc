@@ -3,8 +3,12 @@
 
   "margin-top": 13,
 
-  "modules-left": ["custom/launcher", "clock", "hyprland/workspaces"],
-  "modules-center": ["custom/notifications", "custom/media"],
+  "modules-left": ["custom/launcher", "clock", "custom/media"],
+  "modules-center": [
+    "custom/notifications",
+    "hyprland/workspaces",
+    "power-profiles-daemon",
+  ],
   "modules-right": [
     "custom/pacman",
     "custom/sysinfo",
@@ -12,7 +16,6 @@
     "pulseaudio",
     "battery",
     "network",
-    "power-profiles-daemon",
   ],
 
   "custom/launcher": {
@@ -77,9 +80,13 @@
 
   "custom/sysinfo": {
     "interval": 2,
-    "exec": "~/.config/waybar/scripts/sysinfo.sh",
+    "exec": "$HOME/.config/waybar/scripts/sysinfo.sh",
+    "return-type": "json",
     "format": "{}",
-    "tooltip": false,
+    "signal": 8,
+    "on-click": "$HOME/.config/waybar/scripts/sysinfo.sh toggle-temp",
+    "on-click-right": "$HOME/.config/waybar/scripts/sysinfo.sh toggle-mem",
+    "tooltip": true,
   },
 
   "custom/weather": {
