@@ -9,14 +9,18 @@ DOTFILES="$HOME/dotfiles"
 
 [[ -d "$THEME_DIR" ]] || { echo "Unknown theme: $THEME"; exit 1; }
 
-# Wallpaper — look for ~/Pictures/wallpapers/<theme>.<ext>
+# Wallpaper — check flat file then subdir
+wp_found=""
 for ext in jpg jpeg png webp; do
     wp="$HOME/Pictures/wallpapers/${THEME}.${ext}"
-    if [[ -f "$wp" ]]; then
-        awww img --transition-type center --transition-fps 120 "$wp"
-        break
-    fi
+    if [[ -f "$wp" ]]; then wp_found="$wp"; break; fi
 done
+if [[ -z "$wp_found" ]]; then
+    wp_found=$(find "$HOME/Pictures/wallpapers/${THEME}" -maxdepth 1 \
+        \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) \
+        -print -quit 2>/dev/null)
+fi
+[[ -n "$wp_found" ]] && awww img --transition-type center --transition-fps 120 "$wp_found"
 
 # Hyprland + Hyprlock colors
 cp "$THEME_DIR/hyprland.conf" "$HOME/.config/hypr/colors/colors.conf"

@@ -5,9 +5,11 @@ WALL_DIR="$HOME/Pictures/wallpapers"
 
 cd "$WALL_DIR" || exit 1
 
-SELECTED=$(for f in *.jpg *.jpeg *.png *.webp; do
-    [[ -f "$f" ]] && echo -en "$f\0icon\x1f$WALL_DIR/$f\n"
-done | rofi -dmenu -p "Wallpaper" \
-            -theme "$HOME/dotfiles/.config/rofi/launchers/type-2/style-13.rasi")
+SELECTED=$(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) \
+    | sed "s|^$WALL_DIR/||" | sort \
+    | while IFS= read -r f; do
+        echo -en "$f\0icon\x1f$WALL_DIR/$f\n"
+    done | rofi -dmenu -p "Wallpaper" \
+                -theme "$HOME/dotfiles/.config/rofi/launchers/type-2/style-13.rasi")
 
 [[ -n "$SELECTED" ]] && awww img --transition-type center --transition-fps 120 "$WALL_DIR/$SELECTED"
