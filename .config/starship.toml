@@ -9,16 +9,16 @@ command_timeout = 2000
 palette = 'colors'
 
 [palettes.colors]
-color1 = '#b3c5ff'
-color2 = '#192e60'
-color3 = '#c5c6d0'
-color4 = '#1e1f25'
-color5 = '#192e60'
-color6 = '#121318'
-color7 = '#121318'
-color8 = '#b3c5ff'
-color9 = '#e1bbdc'
-color_error = '#ffb4ab'
+color1 = '#81a2be'
+color2 = '#1d1f21'
+color3 = '#b4b7b4'
+color4 = '#282a2e'
+color5 = '#1d1f21'
+color6 = '#161719'
+color7 = '#161719'
+color8 = '#81a2be'
+color9 = '#b294bb'
+color_error = '#cc6666'
 
 [character]
 success_symbol = "[❱](color9)"

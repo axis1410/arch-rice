@@ -1,0 +1,26 @@
+background = #1e1e2e
+foreground = #cdd6f4
+cursor-color = #b4befe
+cursor-text = #1e1e2e
+selection-background = #313244
+selection-foreground = #cdd6f4
+
+# Normal colors (0-7)
+palette = 0=#181825
+palette = 1=#f38ba8
+palette = 2=#89b4fa
+palette = 3=#b4befe
+palette = 4=#cba6f7
+palette = 5=#cba6f7
+palette = 6=#89b4fa
+palette = 7=#bac2de
+
+# Bright colors (8-15)
+palette = 8=#a6adc8
+palette = 9=#f38ba8
+palette = 10=#89b4fa
+palette = 11=#b4befe
+palette = 12=#cba6f7
+palette = 13=#cba6f7
+palette = 14=#89b4fa
+palette = 15=#cdd6f4

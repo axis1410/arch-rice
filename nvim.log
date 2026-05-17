@@ -1,0 +1,9 @@
+WRN 2026-05-17T11:40:29.534 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/nvim.2.0
+WRN 2026-05-17T11:40:29.559 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/nvim.2.1
+WRN 2026-05-17T11:40:29.617 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/fzf-lua.1778998229.2.2
+WRN 2026-05-17T11:40:45.408 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/nvim.2.0
+WRN 2026-05-17T11:40:45.433 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/nvim.2.1
+WRN 2026-05-17T11:40:45.494 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/fzf-lua.1778998245.2.2
+WRN 2026-05-17T11:41:51.424 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/nvim.2.0
+WRN 2026-05-17T11:41:51.445 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/nvim.2.1
+WRN 2026-05-17T11:41:51.517 ?.2        server_start:197: Failed to start server: operation not permitted: /run/user/1000/fzf-lua.1778998311.2.2

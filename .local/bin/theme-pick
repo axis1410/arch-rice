@@ -1,0 +1,12 @@
+#!/bin/bash
+# Rofi theme picker — type-2/style-13 layout.
+
+THEMES_DIR="$HOME/.config/themes"
+CURRENT="$(cat "$THEMES_DIR/current" 2>/dev/null | tr -d '[:space:]')"
+
+THEME=$(ls -d "$THEMES_DIR"/*/  2>/dev/null | xargs -I{} basename {} | grep -v '^_' | \
+  rofi -dmenu -p "Theme" \
+       -mesg "Current: ${CURRENT:-none}" \
+       -theme "$HOME/dotfiles/.config/rofi/launchers/type-1/style-3.rasi")
+
+[[ -n "$THEME" ]] && ~/.local/bin/theme-switch "$THEME"

@@ -1,0 +1,51 @@
+/*
+ * CSS Colors — github-dark
+ */
+
+@define-color background #0d1117;
+@define-color on_background #c9d1d9;
+
+@define-color primary #58a6ff;
+@define-color on_primary #0d1117;
+@define-color primary_container #21262d;
+@define-color on_primary_container #58a6ff;
+
+@define-color secondary #79c0ff;
+@define-color on_secondary #0d1117;
+@define-color secondary_container #161b22;
+@define-color on_secondary_container #79c0ff;
+
+@define-color tertiary #d2a8ff;
+@define-color on_tertiary #0d1117;
+@define-color tertiary_container #21262d;
+@define-color on_tertiary_container #d2a8ff;
+
+@define-color error #f85149;
+@define-color on_error #0d1117;
+@define-color error_container #161b22;
+@define-color on_error_container #f85149;
+
+@define-color surface #010409;
+@define-color on_surface #c9d1d9;
+@define-color surface_variant #21262d;
+@define-color on_surface_variant #8b949e;
+@define-color surface_bright #161b22;
+@define-color surface_dim #0d1117;
+@define-color surface_container #161b22;
+@define-color surface_container_low #010409;
+@define-color surface_container_lowest #010409;
+@define-color surface_container_high #21262d;
+@define-color surface_container_highest #30363d;
+
+@define-color outline #6e7681;
+@define-color outline_variant #21262d;
+
+@define-color inverse_surface #c9d1d9;
+@define-color inverse_on_surface #0d1117;
+@define-color inverse_primary #21262d;
+
+@define-color source_color #58a6ff;
+
+/* Aliases used by some components */
+@define-color foreground #c9d1d9;
+@define-color accent #58a6ff;

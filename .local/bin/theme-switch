@@ -1,0 +1,69 @@
+#!/bin/bash
+# Apply a static color theme to all configured apps.
+# Usage: theme-switch <theme-name>
+
+THEME="$1"
+THEMES_DIR="$HOME/.config/themes"
+THEME_DIR="$THEMES_DIR/$THEME"
+DOTFILES="$HOME/dotfiles"
+
+[[ -d "$THEME_DIR" ]] || { echo "Unknown theme: $THEME"; exit 1; }
+
+# Wallpaper — look for ~/Pictures/wallpapers/<theme>.<ext>
+for ext in jpg jpeg png webp; do
+    wp="$HOME/Pictures/wallpapers/${THEME}.${ext}"
+    if [[ -f "$wp" ]]; then
+        awww img --transition-type center --transition-fps 120 "$wp"
+        break
+    fi
+done
+
+# Hyprland + Hyprlock colors
+cp "$THEME_DIR/hyprland.conf" "$HOME/.config/hypr/colors/colors.conf"
+hyprctl reload
+
+# Waybar
+cp "$THEME_DIR/waybar.css" "$DOTFILES/.config/waybar/colors/current.css"
+pkill -SIGUSR2 waybar
+
+# Ghostty
+cp "$THEME_DIR/ghostty" "$HOME/.config/ghostty/themes/ColorScheme"
+pkill -SIGUSR2 ghostty 2>/dev/null || true
+
+# GTK 3 + 4
+cp "$THEME_DIR/gtk.css" "$DOTFILES/.config/gtk-3.0/colors.css"
+cp "$THEME_DIR/gtk.css" "$DOTFILES/.config/gtk-4.0/colors.css"
+gsettings set org.gnome.desktop.interface gtk-theme ""
+gsettings set org.gnome.desktop.interface gtk-theme "Graphite-Dark"
+
+# Rofi (all shared color files)
+cp "$THEME_DIR/rofi.rasi" "$DOTFILES/.config/rofi/launchers/type-1/shared/colors.rasi"
+cp "$THEME_DIR/rofi.rasi" "$DOTFILES/.config/rofi/launchers/type-2/shared/colors.rasi"
+cp "$THEME_DIR/rofi.rasi" "$DOTFILES/.config/rofi/launchers/shared/colors.rasi"
+
+# swaync
+cp "$THEME_DIR/swaync.css" "$DOTFILES/.config/swaync/colors/current.css"
+swaync-client -R -rs 2>/dev/null || true
+
+# wlogout
+cp "$THEME_DIR/wlogout.css" "$DOTFILES/.config/wlogout/styles/colors.css"
+
+# tmux
+cp "$THEME_DIR/tmux.conf" "$DOTFILES/.config/tmux/matugen-colors.conf"
+tmux source-file "$HOME/.config/tmux/matugen-colors.conf" 2>/dev/null || true
+
+# opencode
+cp "$THEME_DIR/opencode.json" "$DOTFILES/.config/opencode/themes/matugen.json"
+
+# starship: replace [palettes.colors] block
+python3 - "$THEME_DIR/starship.toml" "$DOTFILES/.config/starship.toml" <<'EOF'
+import sys, re
+palette_block = open(sys.argv[1]).read().strip()
+config = open(sys.argv[2]).read()
+new = re.sub(r'\[palettes\.colors\].*?(?=\n\[|\Z)', palette_block + '\n', config, flags=re.DOTALL)
+open(sys.argv[2], 'w').write(new)
+EOF
+
+echo "$THEME" > "$THEMES_DIR/current"
+notify-send "Theme: $THEME" "Applied successfully" 2>/dev/null || true
+echo "Theme applied: $THEME"

@@ -10,7 +10,7 @@ font-thicken-strength = 200
 
 alpha-blending = native
 
-theme = "Matugen"
+theme = "ColorScheme"
 
 
 cursor-style = "block"
@@ -35,7 +35,7 @@ maximize = true
 window-inherit-font-size = true
 
 background-blur = 100
-background-opacity = 0.9
+background-opacity = 0.90
 background-opacity-cells = true
 
 window-padding-balance = true

@@ -1,0 +1,33 @@
+/*
+ * GTK Colors — one-dark
+ */
+
+@define-color accent_color #61afef;
+@define-color accent_fg_color #282c34;
+@define-color accent_bg_color #61afef;
+@define-color window_bg_color #282c34;
+@define-color window_fg_color #abb2bf;
+@define-color headerbar_bg_color #282c34;
+@define-color headerbar_fg_color #abb2bf;
+@define-color popover_bg_color #21252b;
+@define-color popover_fg_color #abb2bf;
+@define-color view_bg_color #21252b;
+@define-color view_fg_color #abb2bf;
+@define-color card_bg_color #21252b;
+@define-color card_fg_color #abb2bf;
+@define-color sidebar_bg_color @window_bg_color;
+@define-color sidebar_fg_color @window_fg_color;
+@define-color sidebar_border_color @window_bg_color;
+@define-color sidebar_backdrop_color @window_bg_color;
+@define-color thumbnail_bg_color #3e4451;
+@define-color thumbnail_fg_color #abb2bf;
+@define-color dialog_bg_color #21252b;
+@define-color dialog_fg_color #abb2bf;
+@define-color warning_bg_color #d19a66;
+@define-color warning_fg_color #282c34;
+@define-color error_bg_color #e06c75;
+@define-color error_fg_color #282c34;
+@define-color success_bg_color #56b6c2;
+@define-color success_fg_color #282c34;
+@define-color destructive_action_bg_color #e06c75;
+@define-color destructive_action_fg_color #282c34;

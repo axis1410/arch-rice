@@ -1,0 +1,51 @@
+/*
+ * CSS Colors — poimandres
+ */
+
+@define-color background #1b1e28;
+@define-color on_background #e4f0fb;
+
+@define-color primary #89ddff;
+@define-color on_primary #1b1e28;
+@define-color primary_container #4b5263;
+@define-color on_primary_container #89ddff;
+
+@define-color secondary #5de4c7;
+@define-color on_secondary #1b1e28;
+@define-color secondary_container #303340;
+@define-color on_secondary_container #5de4c7;
+
+@define-color tertiary #fcc5e9;
+@define-color on_tertiary #1b1e28;
+@define-color tertiary_container #4b5263;
+@define-color on_tertiary_container #fcc5e9;
+
+@define-color error #d0679d;
+@define-color on_error #1b1e28;
+@define-color error_container #303340;
+@define-color on_error_container #d0679d;
+
+@define-color surface #171922;
+@define-color on_surface #e4f0fb;
+@define-color surface_variant #4b5263;
+@define-color on_surface_variant #a6accd;
+@define-color surface_bright #303340;
+@define-color surface_dim #1b1e28;
+@define-color surface_container #303340;
+@define-color surface_container_low #171922;
+@define-color surface_container_lowest #171922;
+@define-color surface_container_high #4b5263;
+@define-color surface_container_highest #767c9d;
+
+@define-color outline #767c9d;
+@define-color outline_variant #4b5263;
+
+@define-color inverse_surface #e4f0fb;
+@define-color inverse_on_surface #1b1e28;
+@define-color inverse_primary #4b5263;
+
+@define-color source_color #89ddff;
+
+/* Aliases used by some components */
+@define-color foreground #e4f0fb;
+@define-color accent #89ddff;

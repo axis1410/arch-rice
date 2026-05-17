@@ -1,0 +1,51 @@
+/*
+ * CSS Colors — everforest
+ */
+
+@define-color background #2d353b;
+@define-color on_background #d3c6aa;
+
+@define-color primary #a7c080;
+@define-color on_primary #2d353b;
+@define-color primary_container #475258;
+@define-color on_primary_container #a7c080;
+
+@define-color secondary #7fbbb3;
+@define-color on_secondary #2d353b;
+@define-color secondary_container #3d484d;
+@define-color on_secondary_container #7fbbb3;
+
+@define-color tertiary #d699b6;
+@define-color on_tertiary #2d353b;
+@define-color tertiary_container #475258;
+@define-color on_tertiary_container #d699b6;
+
+@define-color error #e67e80;
+@define-color on_error #2d353b;
+@define-color error_container #3d484d;
+@define-color on_error_container #e67e80;
+
+@define-color surface #272e33;
+@define-color on_surface #d3c6aa;
+@define-color surface_variant #475258;
+@define-color on_surface_variant #9da9a0;
+@define-color surface_bright #3d484d;
+@define-color surface_dim #2d353b;
+@define-color surface_container #3d484d;
+@define-color surface_container_low #272e33;
+@define-color surface_container_lowest #272e33;
+@define-color surface_container_high #475258;
+@define-color surface_container_highest #56635f;
+
+@define-color outline #7a8478;
+@define-color outline_variant #475258;
+
+@define-color inverse_surface #d3c6aa;
+@define-color inverse_on_surface #2d353b;
+@define-color inverse_primary #475258;
+
+@define-color source_color #a7c080;
+
+/* Aliases used by some components */
+@define-color foreground #d3c6aa;
+@define-color accent #a7c080;

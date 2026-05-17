@@ -1,0 +1,51 @@
+/*
+ * CSS Colors — one-dark
+ */
+
+@define-color background #282c34;
+@define-color on_background #abb2bf;
+
+@define-color primary #61afef;
+@define-color on_primary #282c34;
+@define-color primary_container #545862;
+@define-color on_primary_container #61afef;
+
+@define-color secondary #56b6c2;
+@define-color on_secondary #282c34;
+@define-color secondary_container #3e4451;
+@define-color on_secondary_container #56b6c2;
+
+@define-color tertiary #c678dd;
+@define-color on_tertiary #282c34;
+@define-color tertiary_container #545862;
+@define-color on_tertiary_container #c678dd;
+
+@define-color error #e06c75;
+@define-color on_error #282c34;
+@define-color error_container #3e4451;
+@define-color on_error_container #e06c75;
+
+@define-color surface #21252b;
+@define-color on_surface #abb2bf;
+@define-color surface_variant #545862;
+@define-color on_surface_variant #828997;
+@define-color surface_bright #3e4451;
+@define-color surface_dim #282c34;
+@define-color surface_container #3e4451;
+@define-color surface_container_low #21252b;
+@define-color surface_container_lowest #21252b;
+@define-color surface_container_high #545862;
+@define-color surface_container_highest #676f7d;
+
+@define-color outline #5c6370;
+@define-color outline_variant #545862;
+
+@define-color inverse_surface #abb2bf;
+@define-color inverse_on_surface #282c34;
+@define-color inverse_primary #545862;
+
+@define-color source_color #61afef;
+
+/* Aliases used by some components */
+@define-color foreground #abb2bf;
+@define-color accent #61afef;

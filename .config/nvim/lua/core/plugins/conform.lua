@@ -43,7 +43,7 @@ return {
 
       -- Disable formatting for HTML files that contain Jinja template syntax.
       -- Prettier and the HTML LSP both mangle template tags.
-      if has_jinja_template_syntax(bufnr) then
+      if ft == "html" and has_jinja_template_syntax(bufnr) then
         return false
       end
 
