@@ -684,6 +684,93 @@ def make_starship(t):
     return "\n".join(lines)
 
 
+def make_yazi(t):
+    c = THEMES[t]
+    lines = [
+        "[mgr]",
+        f'cwd = {{ fg = "{hex_(c["fg"])}" }}',
+        f'find_keyword = {{ fg = "{hex_(c["error"])}", bold = true, italic = true, underline = true }}',
+        f'find_position = {{ fg = "{hex_(c["error"])}", bold = true, italic = true }}',
+        f'marker_copied = {{ fg = "{hex_(c["accent3"])}", bg = "{hex_(c["accent3"])}" }}',
+        f'marker_cut = {{ fg = "{hex_(c["accent2"])}", bg = "{hex_(c["accent2"])}" }}',
+        f'marker_marked = {{ fg = "{hex_(c["error"])}", bg = "{hex_(c["error"])}" }}',
+        f'marker_selected = {{ fg = "{hex_(c["accent1"])}", bg = "{hex_(c["accent1"])}" }}',
+        f'count_copied = {{ fg = "{hex_(c["bg"])}", bg = "{hex_(c["accent3"])}" }}',
+        f'count_cut = {{ fg = "{hex_(c["bg"])}", bg = "{hex_(c["accent2"])}" }}',
+        f'count_selected = {{ fg = "{hex_(c["bg"])}", bg = "{hex_(c["accent1"])}" }}',
+        'border_symbol = "│"',
+        f'border_style = {{ fg = "{hex_(c["accent1"])}" }}',
+        "",
+        "[tabs]",
+        f'active = {{ fg = "{hex_(c["accent1"])}", bold = true, bg = "{hex_(c["bg1"])}" }}',
+        f'inactive = {{ fg = "{hex_(c["fg2"])}", bg = "{hex_(c["bg1"])}" }}',
+        'sep_inner = { open = "[", close = "]" }',
+        "",
+        "[mode]",
+        f'normal_main = {{ bg = "{hex_(c["accent1"])}", fg = "{hex_(c["bg"])}", bold = true }}',
+        f'normal_alt = {{ bg = "{hex_(c["bg3"])}", fg = "{hex_(c["fg2"])}" }}',
+        f'select_main = {{ bg = "{hex_(c["accent2"])}", fg = "{hex_(c["bg"])}", bold = true }}',
+        f'select_alt = {{ bg = "{hex_(c["bg3"])}", fg = "{hex_(c["fg2"])}" }}',
+        f'unset_main = {{ bg = "{hex_(c["accent3"])}", fg = "{hex_(c["bg"])}", bold = true }}',
+        f'unset_alt = {{ bg = "{hex_(c["bg3"])}", fg = "{hex_(c["fg2"])}" }}',
+        "",
+        "[status]",
+        f'perm_type = {{ fg = "{hex_(c["fg3"])}" }}',
+        f'perm_write = {{ fg = "{hex_(c["accent3"])}" }}',
+        f'perm_read = {{ fg = "{hex_(c["error"])}" }}',
+        f'perm_exec = {{ fg = "{hex_(c["accent2"])}" }}',
+        f'perm_sep = {{ fg = "{hex_(c["bg4"])}" }}',
+        "progress_label = { bold = true }",
+        f'progress_normal = {{ fg = "{hex_(c["accent1"])}", bg = "{hex_(c["bg2"])}" }}',
+        f'progress_error = {{ fg = "{hex_(c["error"])}", bg = "{hex_(c["bg2"])}" }}',
+        "",
+        "[which]",
+        "cols = 3",
+        f'mask = {{ bg = "{hex_(c["bg2"])}" }}',
+        f'cand = {{ fg = "{hex_(c["accent1"])}" }}',
+        f'rest = {{ fg = "{hex_(c["fg2"])}" }}',
+        f'desc = {{ fg = "{hex_(c["fg"])}" }}',
+        'separator = " ▶ "',
+        f'separator_style = {{ fg = "{hex_(c["fg2"])}" }}',
+        "",
+        "[pick]",
+        f'border = {{ fg = "{hex_(c["accent1"])}" }}',
+        f'active = {{ fg = "{hex_(c["accent3"])}", bold = true }}',
+        "inactive = {}",
+        "",
+        "[input]",
+        f'border = {{ fg = "{hex_(c["accent1"])}" }}',
+        f'value = {{ fg = "{hex_(c["fg"])}" }}',
+        "",
+        "[filetype]",
+        "rules = [",
+        f'  {{ url = "*", is = "orphan", bg = "{hex_(c["error"])}" }},',
+        f'  {{ url = "*", is = "exec", fg = "{hex_(c["orange"])}" }},',
+        f'  {{ url = "*", fg = "{hex_(c["fg"])}" }},',
+        f'  {{ url = "*/", fg = "{hex_(c["accent1"])}" }},',
+        "]",
+    ]
+    return "\n".join(lines)
+
+
+def make_lazygit(t):
+    c = THEMES[t]
+    lines = [
+        "gui:",
+        "  theme:",
+        f'    activeBorderColor: ["#{c["accent1"]}", "bold"]',
+        f'    inactiveBorderColor: ["#{c["bg4"]}"]',
+        f'    searchingActiveBorderColor: ["#{c["orange"]}", "bold"]',
+        f'    optionsTextColor: ["#{c["accent2"]}"]',
+        f'    selectedLineBgColor: ["#{c["bg2"]}"]',
+        f'    cherryPickedCommitBgColor: ["#{c["bg3"]}"]',
+        f'    cherryPickedCommitFgColor: ["#{c["accent3"]}"]',
+        f'    unstagedChangesColor: ["#{c["error"]}"]',
+        f'    defaultFgColor: ["#{c["fg"]}"]',
+    ]
+    return "\n".join(lines)
+
+
 GENERATORS = {
     "hyprland.conf": make_hyprland,
     "ghostty": make_ghostty,
@@ -695,6 +782,8 @@ GENERATORS = {
     "tmux.conf": make_tmux,
     "opencode.json": make_opencode,
     "starship.toml": make_starship,
+    "yazi-theme.toml": make_yazi,
+    "lazygit.yml": make_lazygit,
 }
 
 for theme_name in THEMES:

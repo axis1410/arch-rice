@@ -59,6 +59,13 @@ tmux source-file "$HOME/.config/tmux/matugen-colors.conf" 2>/dev/null || true
 # opencode
 cp "$THEME_DIR/opencode.json" "$DOTFILES/.config/opencode/themes/matugen.json"
 
+# yazi
+cp "$THEME_DIR/yazi-theme.toml" "$DOTFILES/.config/yazi/theme.toml"
+
+# lazygit
+mkdir -p "$DOTFILES/.config/lazygit"
+cp "$THEME_DIR/lazygit.yml" "$DOTFILES/.config/lazygit/config.yml"
+
 # starship: copy base config then inject palette
 cp "$DOTFILES/.config/starship-base.toml" "$DOTFILES/.config/starship.toml"
 python3 - "$THEME_DIR/starship.toml" "$DOTFILES/.config/starship.toml" <<'EOF'

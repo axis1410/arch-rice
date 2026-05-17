@@ -5,12 +5,17 @@
 .config/gtk-4.0/colors.css
 .config/hypr/colors/colors.conf
 .config/opencode/themes/matugen.json
+.config/lazygit/config.yml
 .config/rofi/launchers/shared/colors.rasi
 .config/rofi/launchers/type-1/shared/colors.rasi
 .config/rofi/launchers/type-2/shared/colors.rasi
 .config/starship.toml
 .config/swaync/colors/current.css
 .config/themes/current
+.config/themes/*/lazygit.yml
+.config/themes/*/yazi-theme.toml
+.config/themes/__pycache__/
 .config/tmux/matugen-colors.conf
 .config/waybar/colors/current.css
 .config/wlogout/styles/colors.css
+.config/yazi/theme.toml
