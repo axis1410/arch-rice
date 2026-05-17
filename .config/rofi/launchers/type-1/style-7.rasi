@@ -212,6 +212,8 @@ element normal.active {
 element selected.normal {
     background-color:            var(selected-normal-background);
     text-color:                  var(selected-normal-foreground);
+    border:                      0px 0px 0px 3px solid;
+    border-color:                @border-colour;
 }
 element selected.urgent {
     background-color:            var(selected-urgent-background);
@@ -274,8 +276,8 @@ button selected {
     border:                      2px 2px 0px 2px ;
     border-radius:               10px 10px 0px 0px;
     border-color:                @border-colour;
-    background-color:            var(normal-background);
-    text-color:                  var(normal-foreground);
+    background-color:            var(selected-normal-background);
+    text-color:                  var(selected-normal-foreground);
 }
 
 /*****----- Message -----*****/
