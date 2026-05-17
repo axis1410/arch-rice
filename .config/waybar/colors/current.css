@@ -1,51 +1,51 @@
 /*
- * CSS Colors — noir
+ * CSS Colors — tokyo-night
  */
 
-@define-color background #101010;
-@define-color on_background #e6e6e6;
+@define-color background #1a1b26;
+@define-color on_background #c0caf5;
 
-@define-color primary #8ab4f8;
-@define-color on_primary #101010;
-@define-color primary_container #2a2a2a;
-@define-color on_primary_container #8ab4f8;
+@define-color primary #7aa2f7;
+@define-color on_primary #1a1b26;
+@define-color primary_container #3b4261;
+@define-color on_primary_container #7aa2f7;
 
-@define-color secondary #89dceb;
-@define-color on_secondary #101010;
-@define-color secondary_container #202020;
-@define-color on_secondary_container #89dceb;
+@define-color secondary #7dcfff;
+@define-color on_secondary #1a1b26;
+@define-color secondary_container #292e42;
+@define-color on_secondary_container #7dcfff;
 
-@define-color tertiary #cba6f7;
-@define-color on_tertiary #101010;
-@define-color tertiary_container #2a2a2a;
-@define-color on_tertiary_container #cba6f7;
+@define-color tertiary #bb9af7;
+@define-color on_tertiary #1a1b26;
+@define-color tertiary_container #3b4261;
+@define-color on_tertiary_container #bb9af7;
 
-@define-color error #f38ba8;
-@define-color on_error #101010;
-@define-color error_container #202020;
-@define-color on_error_container #f38ba8;
+@define-color error #f7768e;
+@define-color on_error #1a1b26;
+@define-color error_container #292e42;
+@define-color on_error_container #f7768e;
 
-@define-color surface #151515;
-@define-color on_surface #e6e6e6;
-@define-color surface_variant #2a2a2a;
-@define-color on_surface_variant #b5b5b5;
-@define-color surface_bright #202020;
-@define-color surface_dim #101010;
-@define-color surface_container #202020;
-@define-color surface_container_low #151515;
-@define-color surface_container_lowest #151515;
-@define-color surface_container_high #2a2a2a;
-@define-color surface_container_highest #3a3a3a;
+@define-color surface #16161e;
+@define-color on_surface #c0caf5;
+@define-color surface_variant #3b4261;
+@define-color on_surface_variant #a9b1d6;
+@define-color surface_bright #292e42;
+@define-color surface_dim #1a1b26;
+@define-color surface_container #292e42;
+@define-color surface_container_low #16161e;
+@define-color surface_container_lowest #16161e;
+@define-color surface_container_high #3b4261;
+@define-color surface_container_highest #545c7e;
 
-@define-color outline #7a7a7a;
-@define-color outline_variant #2a2a2a;
+@define-color outline #9aa5ce;
+@define-color outline_variant #3b4261;
 
-@define-color inverse_surface #e6e6e6;
-@define-color inverse_on_surface #101010;
-@define-color inverse_primary #2a2a2a;
+@define-color inverse_surface #c0caf5;
+@define-color inverse_on_surface #1a1b26;
+@define-color inverse_primary #3b4261;
 
-@define-color source_color #8ab4f8;
+@define-color source_color #7aa2f7;
 
 /* Aliases used by some components */
-@define-color foreground #e6e6e6;
-@define-color accent #8ab4f8;
+@define-color foreground #c0caf5;
+@define-color accent #7aa2f7;

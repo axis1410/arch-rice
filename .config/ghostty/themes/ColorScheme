@@ -1,26 +1,26 @@
-background = #101010
-foreground = #e6e6e6
-cursor-color = #8ab4f8
-cursor-text = #101010
-selection-background = #202020
-selection-foreground = #e6e6e6
+background = #1a1b26
+foreground = #c0caf5
+cursor-color = #7aa2f7
+cursor-text = #1a1b26
+selection-background = #292e42
+selection-foreground = #c0caf5
 
 # Normal colors (0-7)
-palette = 0=#151515
-palette = 1=#f38ba8
-palette = 2=#89dceb
-palette = 3=#8ab4f8
-palette = 4=#8ab4f8
-palette = 5=#cba6f7
-palette = 6=#89dceb
-palette = 7=#b5b5b5
+palette = 0=#16161e
+palette = 1=#f7768e
+palette = 2=#7dcfff
+palette = 3=#7aa2f7
+palette = 4=#7aa2f7
+palette = 5=#bb9af7
+palette = 6=#7dcfff
+palette = 7=#a9b1d6
 
 # Bright colors (8-15)
-palette = 8=#7a7a7a
-palette = 9=#f38ba8
-palette = 10=#89dceb
-palette = 11=#8ab4f8
-palette = 12=#8ab4f8
-palette = 13=#cba6f7
-palette = 14=#89dceb
-palette = 15=#e6e6e6
+palette = 8=#9aa5ce
+palette = 9=#f7768e
+palette = 10=#7dcfff
+palette = 11=#7aa2f7
+palette = 12=#7aa2f7
+palette = 13=#bb9af7
+palette = 14=#7dcfff
+palette = 15=#c0caf5
